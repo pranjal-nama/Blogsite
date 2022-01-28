@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blogs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.b1, .b2, .b3 {
+    width:200px;
+    background-color:#FFFFFF;
+    padding:32px;
+    border-radius:20px;
+    text-align:center;
+  }
+}
