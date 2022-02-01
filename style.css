@@ -21,32 +21,22 @@ a {
 
 img {
     width: 100%;
-    height: 350px;
 }
 
-.intro .text-on-img {
-    color: white;
-    width: 500px;
-    position: absolute;
-    top: 90px;
-    left: 50px;
-    font-size: 28px;
+.text-on-img {
+    color: white;    
 }
 
 .most-viewed {
     display: flex;
-    width: 600px;
     padding-left: 100px;   
     padding-top: 40px; 
-    word-wrap: break-word;
     font-size: 20px;
-/*     padding-bottom: 80px; */
 }
 
 .more {
     padding-left: 100px;
     padding-top: 40px;
-    padding-bottom: 200px;
 }
 
 .gmail-btn {
