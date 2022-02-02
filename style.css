@@ -13,17 +13,23 @@ body {
     align-items: center ;
 }
 
-a {
+h1 {
+    font-size: 3vw;
+}
+
+.link {
+    font-size: 2vw;
     padding: 10px;
     text-decoration: none;
     color: black;   
 }
 
-img {
+.pn-img {
     width: 100%;
 }
 
 .text-on-img {
+    font-size: 2vw;
     color: black;    
 }
 
@@ -31,10 +37,11 @@ img {
     display: flex;
     padding-left: 100px;   
     padding-top: 40px; 
-    font-size: 20px;
+    font-size: 3vw;
 }
 
 .more {
+    font-size: 3vw ;
     padding-left: 100px;
     padding-top: 40px;
 }
@@ -45,24 +52,30 @@ img {
 }
 
 button {
-    width: 150px;
+    width: 20%;
     height: 40px;
     background-color: #D88761;
     border: none;
 }
 
 .mail-link {
+    text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 2vw;
     font-weight: 500;
-}
+} 
 
 #main-footer {
     background-color: #D88761;
-    margin-top: 60px;
+    margin-top: 6vw;
+    height: 5vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.p-footer {
+    font-size: 2vw ;
 }
 
 .fa {
@@ -85,4 +98,16 @@ button {
 
 .fa-github {
     color: black;
+}
+
+@media(max-width:768px ){
+
+    button {   
+        height: 22px;
+
+    }
+
+    .mail-link {
+        font-size: 3vw;
+    }
 }
