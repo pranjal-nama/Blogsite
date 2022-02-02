@@ -6,7 +6,17 @@ body {
     margin: 0;
 }
 
-.Header {
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+  
+
+#Header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -26,6 +36,7 @@ h1 {
 
 .pn-img {
     width: 100%;
+    height: 35vw;
 }
 
 .text-on-img {
@@ -33,20 +44,20 @@ h1 {
     color: black;    
 }
 
-.most-viewed {
+#most-viewed {
     display: flex;
-    padding-left: 100px;   
-    padding-top: 40px; 
+    padding-left: 12vw;   
+    padding-top: 2vw; 
     font-size: 3vw;
 }
 
-.more {
-    font-size: 3vw ;
-    padding-left: 100px;
-    padding-top: 40px;
+#more {
+    font-size: 3vw;
+    padding-left: 12vw;
+    padding-top: 2vw;
 }
 
-.gmail-btn {
+#gmail-btn {
     display: flex;
     justify-content: center;    
 }
@@ -66,9 +77,13 @@ button {
 } 
 
 #main-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
     background-color: #D88761;
-    margin-top: 6vw;
-    height: 5vw;
+    margin-top: 6vw; 
+    height: 2.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,14 +115,13 @@ button {
     color: black;
 }
 
-@media(max-width:768px ){
+@media(max-width:768px){
 
     button {   
         height: 22px;
-
     }
 
     .mail-link {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
