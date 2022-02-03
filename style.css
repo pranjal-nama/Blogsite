@@ -34,14 +34,22 @@ h1 {
     color: black;   
 }
 
-.pn-img {
+#intro {
+    position: relative;
+}
+
+#intro img {
     width: 100%;
-    height: 35vw;
+    /* height: 35vw; */
 }
 
 .text-on-img {
-    font-size: 2vw;
-    color: black;    
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    width: 50%;
+    font-size: 1.5em;
+    color: white;    
 }
 
 #most-viewed {
