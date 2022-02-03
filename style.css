@@ -47,16 +47,9 @@ h1 {
 
 .text-on-img {
     position: absolute;
-<<<<<<< HEAD
     left: 10px;
     width: 50%;
     font-size: 3vw;
-=======
-    top: 30%;
-    left: 10px;
-    width: 50%;
-    font-size: 1.5em;
->>>>>>> 8c8d75f9d92ce30238091644629e728f538bf901
     color: white;    
 }
 
