@@ -137,7 +137,7 @@ button {
     }
 }
 
-.card {
+.about-card {
     background-color: #FCDED9;
     position: relative;
     margin: 8vw;
@@ -186,11 +186,3 @@ button {
     justify-content: space-around;
     height: 30vw;
 }
-
-/* @media(max-width:768px) {
-    
-    .img-box {
-        display: flex;
-        flex-direction: column;
-    }
-} */
