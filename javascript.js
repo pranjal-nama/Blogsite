@@ -1,4 +1,4 @@
-let all_blogs = '';
-let blog = '';
+// let all_blogs = '';
+// let blog = '';
 
-
+// $('.carousel').carousel()
