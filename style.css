@@ -78,7 +78,7 @@ h1 {
 
 .blog-image{
     width: 50%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -94,13 +94,23 @@ h1 {
 }
 
 .blog-overview{
-    line-height: 30px; 
+    line-height: 25px; 
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 #view-btn{
-    background: #1b1b1b;
-    color: #fff;
+    background: #D88761;
+    color: black;
     border-radius: 7px;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #more {
@@ -190,13 +200,27 @@ h1 {
 
 @media(max-width:768px){
 
-    button {   
+    #most-viewed {
+        font-size: 5vw;
+    }
+
+    .blog-overview {
+        line-height: normal;
+    }
+
+    .card-footer .date {
+        
+    }
+
+    #gmail-btn {   
         height: 22px;
     }
 
     .mail-link {
         font-size: 2vw;
     }
+
+
 }
 /* Home.html */
 
