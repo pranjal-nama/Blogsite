@@ -30,7 +30,7 @@ h1 {
 .link {
     text-align: center;
     line-height: 32px;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     padding: 10px;
     text-decoration: none;
     color: black;   
@@ -61,14 +61,6 @@ h1 {
     font-size: 3vw;
 }
 
-.blog-section{
-    width: 100%;
-    padding: 50px 5vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 80px;
-}
-
 .blog-card1, .blog-card2 {
     display: flex;
     margin-bottom: 10px;
@@ -78,7 +70,7 @@ h1 {
 
 .blog-image{
     width: 50%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -173,7 +165,7 @@ h1 {
 }
 
 .p-footer {
-    font-size: 1.2vw ;
+    font-size: 1.5vw ;
 }
 
 .fa {
