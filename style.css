@@ -36,6 +36,7 @@ h1 {
     color: black;   
 }
 
+/* Home.html */
 #intro {
     position: relative;
 }
@@ -60,18 +61,79 @@ h1 {
     font-size: 3vw;
 }
 
+.blog-section{
+    width: 100%;
+    padding: 50px 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+
+.blog-card1, .blog-card2 {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw; 
+}
+
+.blog-image{
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.blog-description1, .blog-description2 {
+    width: 100%;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(#FEDECF,#FBF2ED);
+}
+
+.blog-overview{
+    line-height: 30px; 
+}
+
+#view-btn{
+    background: #1b1b1b;
+    color: #fff;
+    border-radius: 7px;
+}
+
 #more {
     font-size: 3vw;
     padding-left: 5vw;
     padding-top: 1vw;
 }
 
+#more-blogs {
+    display: flex;
+    padding-left: 4vw;
+}
+
+.b1, .b2, .b3 {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    align-items: center;
+}
+.b-img {
+    border-radius: 10px;
+    width: 20vw;
+    height: 20vw;
+}
+
+.b-title {
+    text-decoration: none;
+}
+
 #gmail-btn {
     display: flex;
     justify-content: center;    
-}
-
-button {
+    align-items: center;
     width: 19%;
     height: 4vw;
     background-color: #D88761;
@@ -136,7 +198,9 @@ button {
         font-size: 2vw;
     }
 }
+/* Home.html */
 
+/* About.html */
 .about-card {
     background-color: #FCDED9;
     position: relative;
@@ -186,3 +250,4 @@ button {
     justify-content: space-around;
     height: 30vw;
 }
+/* About.html */
