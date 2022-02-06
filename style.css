@@ -34,6 +34,11 @@ h1 {
     padding: 10px;
     text-decoration: none;
     color: black;   
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    font-size: 2vw;
 }
 
 /* Home.html */
@@ -69,6 +74,38 @@ h1 {
     box-shadow: $shadow;
     box-shadow: rgba(0, 0, 0, 0.40) 4.5px 4.5px 6px;
     border-radius: 10px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.blog-card1:disabled {
+    pointer-events: none;
+}
+
+.blog-card2:disabled {
+    pointer-events: none;
+}
+  
+.blog-card1:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.blog-card2:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.blog-card1:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.blog-card2:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
 
 .blog-image{
@@ -101,11 +138,17 @@ h1 {
 #view-btn{
     background: #D88761;
     color: black;
-    border-radius: 7px;
+    border-radius: 3px;
     border: none;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#view-btn:hover{
+    transform: scale(1.1);
 }
 
 #more {
@@ -128,11 +171,30 @@ h1 {
     align-items: center;
     margin: 10px;
 }
+
+.b-img:disabled {
+  pointer-events: none;
+}
+
+.b-img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.b-img:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
 .b-img {
     border-radius: 2px;
     width: 15vw;
     height: 20vw;
     box-shadow: rgba(0, 0, 0, 0.80) 4.5px 4.5px 6px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
 }
 
 .b-title {
@@ -140,6 +202,12 @@ h1 {
     color: black;
     font-size: 2vw;
     margin: 1vw;
+    transition: all 0.5s ease;
+}
+
+.b-title:hover{
+    color: #494949;
+    font-size: 2.5vw;
 }
 
 #div-gmail-btn {
@@ -238,6 +306,7 @@ h1 {
     text-decoration: none;
     margin: 5px 2px;
 }
+
 .fa-twitter {
     color: #55ACEE;
 }
