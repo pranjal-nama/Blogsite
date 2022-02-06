@@ -43,7 +43,7 @@ h1 {
 
 #intro img {
     width: 100%;
-    /* height: 35vw; */
+    height: 35vw;
 }
 
 .text-on-img {
@@ -63,14 +63,17 @@ h1 {
 
 .blog-card1, .blog-card2 {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 3vw;
     margin-left: 5vw;
     margin-right: 5vw; 
+    box-shadow: $shadow;
+    box-shadow: rgba(0, 0, 0, 0.40) 4.5px 4.5px 6px;
+    border-radius: 10px;
 }
 
 .blog-image{
     width: 50%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -113,7 +116,9 @@ h1 {
 
 #more-blogs {
     display: flex;
-    padding-left: 4vw;
+    justify-content: flex-start;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .b1, .b2, .b3 {
@@ -121,22 +126,52 @@ h1 {
     flex-direction: column;
     padding: 1vw;
     align-items: center;
+    margin: 10px;
 }
 .b-img {
-    border-radius: 10px;
-    width: 20vw;
+    border-radius: 2px;
+    width: 15vw;
     height: 20vw;
+    box-shadow: rgba(0, 0, 0, 0.80) 4.5px 4.5px 6px;
 }
 
 .b-title {
     text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    margin: 1vw;
+}
+
+#div-gmail-btn {
+    display: flex;
+    justify-content: center;
 }
 
 #gmail-btn {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-width: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 1em;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
     display: flex;
     justify-content: center;    
     align-items: center;
-    width: 19%;
+    width: 20%;
     height: 4vw;
     background-color: #D88761;
     border: none;
@@ -144,12 +179,41 @@ h1 {
     border-radius: 3px ;
 }
 
-.mail-link {
+#gmail-btn:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #FEDECF;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+}
+
+#gmail-btn:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+#gmail-btn:after {
+      background-color: #FFFFFF;
+}
+
+#gmail-btn span {
+    z-index: 1;
+    position: relative;
+}
+
+.span-btn-text .mail-link {
     text-decoration: none;
-    color: white;
-    font-size: 1.75vw;
+    color:black;
+    font-size: 2vw;
     font-weight: 500;
-} 
+}  
 
 #main-footer {
     position: absolute;
@@ -196,12 +260,17 @@ h1 {
         font-size: 5vw;
     }
 
-    .blog-overview {
-        line-height: normal;
+    .blog-card1, .blog-card2 {
+        height: 250px;
     }
 
-    .card-footer .date {
-        
+    .blog-overview {
+        line-height: normal;
+        height: 140px;
+    }
+
+    .blog-image {
+        height: 250px;
     }
 
     #gmail-btn {   
