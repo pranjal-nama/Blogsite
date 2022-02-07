@@ -48,7 +48,7 @@ h1 {
 
 #intro img {
     width: 100%;
-    height: 35vw;
+    /* height: 40vw; */
 }
 
 .text-on-img {
@@ -71,7 +71,6 @@ h1 {
     margin-bottom: 3vw;
     margin-left: 5vw;
     margin-right: 5vw; 
-    box-shadow: $shadow;
     box-shadow: rgba(0, 0, 0, 0.40) 4.5px 4.5px 6px;
     border-radius: 10px;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -138,7 +137,7 @@ h1 {
 #view-btn{
     background: #D88761;
     color: black;
-    border-radius: 3px;
+    border-radius: 5px;
     border: none;
     padding: 5px;
     padding-left: 10px;
@@ -244,7 +243,7 @@ h1 {
     background-color: #D88761;
     border: none;
     margin: 6vw;
-    border-radius: 3px ;
+    border-radius: 5px ;
 }
 
 #gmail-btn:before {
@@ -301,27 +300,32 @@ h1 {
 }
 
 .fa {
-    padding: 5px;
-    width: 5px;
     text-decoration: none;
-    margin: 5px 2px;
+    width: 20px;
+    padding: 7px;
+    border-radius: 4px;
+    margin: 3px;
 }
 
 .fa-twitter {
-    color: #55ACEE;
+    color: white;
+    background-color: #55ACEE;
 }
      
 .fa-instagram {
-    color: black ;
+    color: white ;
+    background-color: #125688;
 }
       
 .fa-linkedin {
-    color: #007bb5;
+    color: white;
+    background-color: #007bb5;
 }
 
 .fa-github {
-    color: black;
-}
+    color: white;
+    background-color: black;
+} 
 
 @media(max-width:768px){
 
@@ -350,6 +354,15 @@ h1 {
         font-size: 2vw;
     }
 
+    .slide-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .p-footer {
+        font-size: 2vw ;
+    }
+    
 
 }
 /* Home.html */
@@ -396,6 +409,7 @@ h1 {
 .head-pn-life {
     font-size: 3vw;
     padding-left: 8vw;   
+    padding-right: 8vw;   
     display: flex;
     justify-content: center;
 }
@@ -407,22 +421,15 @@ h1 {
     height: 30vw;
 } */
 
-* {box-sizing: border-box;}
-body {
-    font-family: Verdana, sans-serif;
-}
-
 .mySlides {
     display: none;
-}
-
-img {
-    vertical-align: middle;
+    box-sizing: border-box;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px ;
+    box-sizing: border-box;
+    max-width: 300px;
     position: relative;
     margin: auto;
     display: flex;
@@ -431,6 +438,7 @@ img {
 }
 
 .slide-img {
+    box-sizing: border-box;
     width: 20vw;
     height: 35vw;
     border-radius: 2px;
@@ -438,21 +446,24 @@ img {
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    box-sizing: border-box;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+    box-sizing: border-box;
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
+    box-sizing: border-box;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -475,3 +486,29 @@ img {
 }
 
 /* About.html */
+
+/* Blog-page */
+
+#blog101 {
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 0px 10px;
+    border-radius: 12px;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    margin-top: 5vw;
+    margin-bottom: 2.5vw;
+}
+
+#blog101-container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+#head-blog101 {
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Blog-page */
