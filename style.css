@@ -539,7 +539,7 @@ table {
 }
 
 .block-content-container {
-	width: 20vw;
+	width: 20.2vw;
 }
 
 .table-img {
@@ -616,5 +616,9 @@ table {
 
 	#blog-date {
 		font-size: 14px;
+	}
+
+	.table-block-head {
+		font-size: 15px;
 	}
 }
