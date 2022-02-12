@@ -529,8 +529,11 @@ table {
 }
 
 .table-block {
+	display: inline-block;
 	width: 20vw;
-	/* height: 40vw; */
+	min-height: 30vw;
+	margin-left: 2vw;
+	overflow: hidden;
 	border: rgb(204, 204, 204) 0.5px solid;
 }
 
@@ -539,11 +542,11 @@ table {
 }
 
 .block-content-container {
-	width: 20.2vw;
+	width: 20vw;
 }
 
 .table-img {
-	width: 20vw;
+	width: 19.8vw;
 	height: 30vw;
 	margin: 0.1vw;
 }
